@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_login.php" method="POST">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br>
+
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required><br>
+                <button type="submit" id="btn-iniciar-sesion">Iniciar Sesión</button>
+
+            </form>
+            <p>No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('btn-iniciar-sesion').addEventListener('click', function(event) {
+            // Evitar el envío del formulario predeterminado
+            event.preventDefault();
+            
+            // Obtener los valores del correo y la contraseña
+            var correo = document.getElementById('correo').value;
+            var contraseña = document.getElementById('contraseña').value;
+            
+            // Verificar si se ingresaron tanto el correo como la contraseña
+            if(correo.trim() !== '' && contraseña.trim() !== '') {
+                // Si ambos campos están llenos, redirigir al usuario a astro.html
+                window.location.href = 'https://victordaniel123.github.io/menu/';
+            } else {
+                // Mostrar un mensaje indicando que se deben completar todos los campos
+                alert('Por favor, completa todos los campos.');
+            }
+        });
+    </script>
+</body>
+</html>

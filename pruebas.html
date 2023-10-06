@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+ 
+<body>
+    <h1>¡Contacta con Nosotros!</h1>
+    <p">¡Esperamos con interés escuchar tus ideas y colaborar contigo en proyectos emocionantes!
+        No dudes en ponerte en contacto con nosotros a través de los siguientes medios:</p>
+    <p>Teléfono: +52 123 456 7811</p>
+    <p>Correo Electrónico: correeo@empresa.com</p>
+ 
+    <!-- agregar una tabbla -->
+    <form method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <table border="0" width="80%">
+                <tr>
+                    <td align="left">Nombre:</td>
+                    <td><input type="text" name="nombre"></td>
+                </tr>
+                <tr>
+                    <td align="left">Correo:</td>
+                    <td><input type="email" name="correo"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td align="left">Edad:</td>
+                    <td><input type="number" name="Edad"></td>
+                </tr>
+                <td align="left">Contraseña:</td>
+                <td><input type="password" name="contrasena"></td>
+                </tr>
+                <td align="left">Género:</td>
+                <td>
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                </td>
+ 
+                <tr>
+                    <td align="left">Hobbies:</td>
+                    <td>
+                        <label><input type="checkbox" name="nadar"> Nadar</label><br>
+                        <label><input type="checkbox" name="correr" checked> Correr</label><br>
+                        <label><input type="checkbox" name="cantar"> Cantar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Preferencia de Música:</td>
+                    <td>
+                        <select name="preferenciaMusical">
+                            <option disabled selected>Seleccione una Preferencia</option>
+                            <option value="pop">Pop</option>
+                            <option value="electrónica">Electrónica</option>
+                            <option value="hip-hop">Hip Hop</option>
+                            <option value="clásica">Clásica</option>
+                        </select>
+                    </td>
+                </tr>
+        </fieldset>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Enviar"></td>
+        </tr>
+        </table>
+ 
+    </form>
+</body>
+ 
+</html>
